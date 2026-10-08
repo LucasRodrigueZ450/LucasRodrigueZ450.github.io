@@ -1,0 +1,120 @@
+/* ===== Variáveis ===== */
+:root {
+  --papel: #F2EFE8;
+  --grafite: #1E2124;
+  --texto-suave: #4A4F54;
+  --sinal: #D4561E;
+  --petroleo: #2E5A5C;
+  --linha: #CFC9BC;
+
+  --fonte-texto: "IBM Plex Sans", system-ui, sans-serif;
+  --fonte-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --largura: 1080px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --papel: #16181A;
+    --grafite: #E8E3D8;
+    --texto-suave: #A9A49A;
+    --sinal: #EE7440;
+    --petroleo: #6FA3A4;
+    --linha: #33373B;
+  }
+}
+
+/* ===== Reset básico ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--papel);
+  color: var(--grafite);
+  font-family: var(--fonte-texto);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--sinal);
+}
+
+/* ===== Cabeçalho ===== */
+.topo {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem max(1rem, calc((100% - var(--largura)) / 2));
+  background: var(--papel);
+  border-bottom: 1px solid var(--linha);
+}
+
+.logo {
+  font-family: var(--fonte-mono);
+  font-weight: 500;
+  color: var(--grafite);
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.menu a {
+  color: var(--texto-suave);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.menu a:hover {
+  color: var(--sinal);
+}
+
+/* ===== Seções ===== */
+main section {
+  max-width: var(--largura);
+  margin: 0 auto;
+  padding: 5rem 1rem;
+  border-bottom: 1px solid var(--linha);
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== Rodapé ===== */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-family: var(--fonte-mono);
+  font-size: 0.85rem;
+  color: var(--texto-suave);
+}
