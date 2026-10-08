@@ -1,61 +1,269 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Rodrigues | Infraestrutura, Suporte e Desenvolvimento</title>
-    <meta name="description" content="Lucas Rodrigues: suporte técnico, infraestrutura de TI e desenvolvimento web em Fortaleza.">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <meta name="description"
+        content="Lucas Rodrigues: suporte técnico, infraestrutura de TI e desenvolvimento web em Fortaleza.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-  <header class="topo">
-    <a href="#inicio" class="logo">Lucas</a>
-    <nav>
-      <ul class="menu">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#formacao">Formação</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header class="topo">
+        <a href="#inicio" class="logo" aria-label="Lucas Rodrigues, voltar ao início">
+            <span class="logo-marca" aria-hidden="true">LR</span>
+            <span class="logo-nome">lucas.rodrigues</span>
+        </a>
 
-  <main>
-    <section id="inicio">
-      <h1>Infraestrutura, suporte e sistemas sob medida</h1>
-      <p>Texto curto de apresentação.</p>
-    </section>
+        <button class="menu-botao" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+            <span></span><span></span><span></span>
+        </button>
 
-    <section id="sobre">
-      <h2>Sobre</h2>
-    </section>
+        <nav aria-label="Navegação principal">
+            <ul class="menu" id="menu-principal">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#contato" class="menu-cta">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section id="projetos">
-      <h2>Projetos</h2>
-    </section>
+    <main>
 
-    <section id="servicos">
-      <h2>Serviços</h2>
-    </section>
+        <section id="inicio" class="hero">
+            <div class="hero-texto">
+                <p class="rotulo">// suporte · infraestrutura · desenvolvimento</p>
+                <h1>Lucas Rodrigues</h1>
+                <p class="hero-sub">
+                    Técnico de suporte em TI na área da saúde e estudante de Análise e
+                    Desenvolvimento de Sistemas. Mantenho ambientes funcionando e construo
+                    sistemas para resolver problemas reais de operação.
+                </p>
+                <div class="hero-acoes">
+                    <a href="#projetos" class="botao">Ver projetos</a>
+                    <a href="#contato" class="botao botao-linha">Falar comigo</a>
+                </div>
+            </div>
+            <figure class="hero-foto">
+                <img src="img/foto.jpg" alt="Foto de Lucas Rodrigues">
+            </figure>
+        </section>
 
-    <section id="formacao">
-      <h2>Formação e experiência</h2>
-    </section>
+        <section id="sobre">
+            <p class="rotulo">// 01 sobre</p>
+            <h2>Sobre</h2>
+            <div class="texto-longo">
+                <p>
+                    Trabalho no suporte técnico da Rede ICC Saúde, em Fortaleza, atendendo
+                    diretamente os setores que lidam com pacientes, incluindo os consultórios
+                    de quimioterapia. Nesse ambiente, um computador parado é um atendimento
+                    atrasado, e isso molda a forma como eu trabalho: resolver rápido e
+                    documentar para não repetir.
+                </p>
+                <p>
+                    Fora do expediente, mantenho um laboratório doméstico que simula a
+                    infraestrutura de uma empresa, onde estudo servidores Windows e Linux,
+                    virtualização e redes, e onde rodam os sistemas que desenvolvo.
+                </p>
+            </div>
+        </section>
 
-    <section id="contato">
-      <h2>Contato</h2>
-    </section>
-  </main>
+        <section id="projetos">
+            <p class="rotulo">// 02 projetos</p>
+            <h2>Projetos</h2>
+            <div class="grade-projetos">
 
-  <footer>
-    <p>&copy; <span id="ano"></span> Lucas</p>
-  </footer>
+                <article class="projeto projeto-destaque">
+                    <div class="destaque-texto">
+                        <p class="rotulo">// projeto acadêmico · equipe de 5</p>
+                        <h3>BarberConnect</h3>
+                        <p>
+                            Plataforma de agendamento para barbearias, criada para um barbeiro de
+                            bairro que controlava a agenda no papel e no WhatsApp. Começou como
+                            painel web de gestão e evoluiu para aplicativo mobile, onde o cliente
+                            escolhe serviço, profissional e horário.
+                        </p>
+                        <dl class="papel">
+                            <dt>Meu papel no app</dt>
+                            <dd>Front-end mobile: início e navegação de visitante, login e cadastro, perfil do cliente
+                                com histórico de atendimentos.</dd>
+                            <dt>Meu papel na versão web</dt>
+                            <dd>Telas do painel, integração com a API e documentação Swagger.</dd>
+                        </dl>
+                        <ul class="tags">
+                            <li>React Native</li>
+                            <li>TypeScript</li>
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>Supabase</li>
+                            <li>Swagger</li>
+                        </ul>
+                    </div>
+                    <div class="telas">
+                        <img src="img/barber/home.jpeg"
+                            alt="Tela inicial do BarberConnect com serviços e barbeiros populares">
+                        <img src="img/barber/login.jpeg" alt="Tela de login do BarberConnect">
+                        <img src="img/barber/perfil.jpeg" alt="Tela de perfil do cliente com histórico de atendimentos">
+                    </div>
+                </article>
 
-  <script src="js/main.js"></script>
+                <article class="projeto">
+                    <h3>Sistema de contas a pagar</h3>
+                    <p>
+                        Aplicação web para controle de despesas, parcelas recorrentes,
+                        assinaturas e divisão de gastos, com ambientes separados de produção
+                        e homologação. Hospedada em VM Ubuntu com Nginx e banco PostgreSQL
+                        gerenciado.
+                    </p>
+                    <ul class="tags">
+                        <li>React</li>
+                        <li>TypeScript</li>
+                        <li>Node.js</li>
+                        <li>Prisma</li>
+                        <li>PostgreSQL</li>
+                        <li>Nginx</li>
+                    </ul>
+                </article>
+
+                <article class="projeto">
+                    <h3>LAB.LOCAL</h3>
+                    <p>
+                        Laboratório corporativo doméstico com Domain Controller, Active
+                        Directory, DNS, GPO e servidores virtualizados em Hyper-V, usado para
+                        estudar administração de infraestrutura como numa empresa real.
+                    </p>
+                    <ul class="tags">
+                        <li>Windows Server</li>
+                        <li>Active Directory</li>
+                        <li>Hyper-V</li>
+                        <li>PowerShell</li>
+                    </ul>
+                </article>
+
+                <article class="projeto">
+                    <h3>Painel NOC</h3>
+                    <p>
+                        Painel web de monitoramento dos servidores do laboratório: CPU,
+                        memória, armazenamento e velocidade de internet, com coleta sem
+                        agente e comandos remotos de ligar, desligar e reiniciar.
+                    </p>
+                    <ul class="tags">
+                        <li>Python</li>
+                        <li>FastAPI</li>
+                        <li>WinRM</li>
+                        <li>Wake-on-LAN</li>
+                    </ul>
+                </article>
+
+                <article class="projeto">
+                    <h3>VM RHEL de estudo</h3>
+                    <p>
+                        Ambiente Red Hat Enterprise Linux para estudar administração Linux
+                        corporativa: firewalld, SELinux, containers com Podman e
+                        gerenciamento pelo Cockpit.
+                    </p>
+                    <ul class="tags">
+                        <li>RHEL 9</li>
+                        <li>SELinux</li>
+                        <li>Podman</li>
+                        <li>firewalld</li>
+                    </ul>
+                    <p class="status">Em andamento</p>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="servicos">
+            <p class="rotulo">// 03 serviços</p>
+            <h2>Serviços para o seu negócio</h2>
+            <div class="grade-servicos">
+                <div class="servico">
+                    <h3>Sistemas sob medida</h3>
+                    <p>
+                        Controle de pedidos, painéis, financeiro e rotinas que hoje são
+                        feitas no papel ou em planilha.
+                    </p>
+                </div>
+                <div class="servico">
+                    <h3>Suporte de TI</h3>
+                    <p>
+                        Manutenção de computadores, impressoras, rede e Wi-Fi, para o
+                        negócio não parar.
+                    </p>
+                </div>
+                <div class="servico">
+                    <h3>Infraestrutura e backup</h3>
+                    <p>
+                        Organização da rede, servidores, contas de usuário e rotina de
+                        backup para não perder dados.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="formacao">
+            <p class="rotulo">// 04 formação e experiência</p>
+            <h2>Formação e experiência</h2>
+            <ol class="linha-tempo">
+                <li>
+                    <span class="periodo">2024 — atual</span>
+                    <h3>Suporte Técnico · Rede ICC Saúde</h3>
+                    <p>Suporte aos setores de atendimento a pacientes, incluindo consultórios de quimioterapia.</p>
+                </li>
+                <li>
+                    <span class="periodo">2023 — 2027</span>
+                    <h3>Análise e Desenvolvimento de Sistemas · Unifor</h3>
+                    <p>Graduação tecnológica em andamento.</p>
+                </li>
+            </ol>
+        </section>
+
+        <section id="contato">
+            <p class="rotulo">// 05 contato</p>
+            <h2>Contato</h2>
+            <p>Vagas, projetos ou suporte para o seu negócio: fale comigo pelo canal que preferir.</p>
+            <ul class="contatos">
+                <li><a href="https://wa.me/558534862896" target="_blank" rel="noopener" class="botao">WhatsApp</a></li>
+                <li><a href="mailto:lucasrodriguessl10@gmail.com" class="botao botao-linha">E-mail</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+            <div>
+                <a href="#inicio" class="logo" aria-label="Lucas Rodrigues, voltar ao início">
+                    <span class="logo-marca" aria-hidden="true">LR</span>
+                    <span class="logo-nome">lucas.rodrigues</span>
+                </a>
+                <p class="rodape-texto">Suporte, infraestrutura e desenvolvimento. Fortaleza, CE.</p>
+            </div>
+            <ul class="rodape-links">
+                <li><a href="https://github.com/LucasRodrigueZ450" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/lucas-rodrigues-416148339/" target="_blank"
+                        rel="noopener">LinkedIn</a></li>
+            </ul>
+        </div>
+        <div class="rodape-base">
+            <p>&copy; <span id="ano"></span> Lucas Rodrigues</p>
+            <a href="#inicio">voltar ao topo</a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
+
 </html>
